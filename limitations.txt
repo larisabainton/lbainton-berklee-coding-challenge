@@ -1,0 +1,6 @@
+- Multiple correct answers? correctAnswerIndex could be an array of possible correct answers
+- More information on a failure? Each question option could be an object with hints, text to display on failures (explanations), etc.
+- Input Validation: We assume that the questions are provided in order of when they should appear in the video and also that no questions are on the same timestamp. Furthermore, no questions can be so close together so as not to trigger within the same call of the 'timeupdate' event which will be at some frequency between 4 to 20Hz. (Not within 1/4s).
+- We assume that replaying the video after getting the response incorrect result in an incorrect answer in the final tally.
+- Tampering: Users could still easily tamper with this site by manipulating the JSON.
+- Technical: Not using transpiling, linting, or any framework. Not using any stylesheet management like SASS.

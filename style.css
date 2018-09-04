@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+button,
+button:active,
+button:focus,
+input {
+    border: none;
+    outline: none;
+}
+
+button:active {
+    border: none;
+    outline: none;
+}
+
+.lecture__header {
+    background-color: #eff1f3;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.lecture__title {
+    font-size: 4rem;
+}
+
+#lecture__video-frame {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lecture__video {
+    width: 50%;
+}
+
+#lecture__video-button {
+    background-color: #ee243c;
+    color: #FFF;  
+    font-size: 15px;
+    width: 80px;
+    height: 36px;  
+}
+
+#lecture__video-button:hover {
+    background-color: #8e1524;
+}
+
+#lecture__video-button:disabled {
+    background-color: #4c5960;
+}
+
+#lecture__question-frame {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    border: rgb(136, 136, 136) solid 1px;
+}
+
+#lecture__current-question-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#lecture__current-question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lecture__replay-button,
+#lecture__continue-button,
+#lecture__current-question-submit-button {
+    font-size: 15px;
+    height: 36px;  
+    background-color: rgb(22, 172, 150);
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+#lecture__current-question-submit-button:hover {
+    background-color: #107f6f;
+}
+
+.lecture__current-question-option {
+    padding: 3px;
+}
